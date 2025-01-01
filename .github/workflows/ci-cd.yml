@@ -27,9 +27,8 @@ jobs:
       with:
         context: .
         push: true
-        tags: yourusername/golang-docker-app:latest
+        tags: sinhapragya020/golang-docker-app:latest
 
     - name: Verify Docker image
       run: |
-        docker run yourusername/golang-docker-app:latest
-
+        docker run --rm sinhapragya020/golang-docker-app:latest
