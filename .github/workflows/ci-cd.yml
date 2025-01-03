@@ -1,5 +1,3 @@
-tags: sinhapragya7278/golang-docker-app:latest
-tags: sinhapragya7278/golang-docker-app:latest
 name: Docker CI/CD
 
 on:
@@ -13,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          submodules: false
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -24,6 +24,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: sinhapragya7278/golang-docker-app:latest
+          tags: sinhapragya020/golang-docker-app:latest
 
 
