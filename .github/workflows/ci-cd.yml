@@ -1,3 +1,5 @@
+tags: sinhapragya7278/golang-docker-app:latest
+tags: sinhapragya7278/golang-docker-app:latest
 name: Docker CI/CD
 
 on:
@@ -22,5 +24,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: your-docker-username/golang-docker-app:latest
+          tags: sinhapragya7278/golang-docker-app:latest
+
 
